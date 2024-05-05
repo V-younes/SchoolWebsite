@@ -1,0 +1,407 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* start nav bar to style*/
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    border-bottom: 1px solid #ccc;
+}
+.links{
+  font-family: "Noto Naskh Arabic", serif;
+  margin-left: 20px;
+  margin-top: 7px;
+}
+.links a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.links a:hover{
+    color: #007bff;
+    transition: 0.3s;  
+}   
+.title{
+    margin-right: 5px;
+    font-family: "Reem Kufi Fun", sans-serif;
+}
+/* finish nav bar to style*/
+/* start page to home*/
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.imgpage img{
+  width: 100%;
+}
+.textpage{
+  margin-top: 25px;
+}
+.textpage h2{
+  font-family:"Reem Kufi Fun", sans-serif ;
+  text-align: center;
+  font-size: 35px;
+}
+.textpage p{
+  margin-top: 20px;
+  font-family:"Noto Naskh Arabic", serif ;
+}
+.button {
+  margin-left: 60%;
+  margin-top: 40px;
+  --color: #00A97F;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: .3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+ }
+ .button::before, .button::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+ }
+ .button::before {
+  top: -1em;
+  left: -1em;
+ }
+ .button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+ }
+ .button:hover::before, .button:hover::after {
+  height: 410px;
+  width: 410px;
+ }
+ .button:hover {
+  color: rgb(10, 25, 30);
+ }
+ .button:active {
+  filter: brightness(.8);
+ }
+/* finish page to home*/
+/* start  page to use data */
+.howToLogin{
+  display: flex;
+  justify-content: space-between;
+  font-family: "Noto Naskh Arabic", serif;
+}
+.imageUseData img{
+  width: 100%;
+}
+.dataSe{
+  margin-top: 90px;
+  text-align: center;
+  color: #333;
+}
+.useData{
+  margin-top: 20px;
+}
+.useData h2{
+  text-align: center;
+}
+.useData p{
+  margin-top: 20px;
+  text-align: center;
+}
+.button1{
+  margin-left: 40%;
+  margin-top: 40px;
+  --color: #00A97F;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: .3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+}
+.button1::before, .button1::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+ }
+ .button1::before {
+  top: -1em;
+  left: -1em;
+ }
+ .button1::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+ }
+ .button1:hover::before, .button1:hover::after {
+  height: 410px;
+  width: 410px;
+ }
+ .button1:hover {
+  color: rgb(10, 25, 30);
+ }
+ .button1:active {
+  filter: brightness(.8);
+ }
+/* finish  page to use data */
+/* start style to page login*/
+.laoding1{
+  margin-top: 10px;
+  margin-left: 44%;
+}
+.loading2{
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 35%;
+}
+.loader{
+  margin-left: 46%;
+  margin-top: 6%;
+}
+.loader {
+  display: flex;
+  transition: all 0.4s;
+}
+.loader div {
+  margin-left: 0.8rem;
+  background-color: rgb(34, 34, 34);
+  box-shadow: inset 2px 2px 10px black;
+  border-radius: 100%;
+  height: 1rem;
+  width: 1rem;
+}
+.box-load1 {
+  animation: brighten 1.2s infinite;
+}
+.box-load2 {
+  animation: brighten 1.2s infinite;
+  animation-delay: .2s;
+}
+.box-load3 {
+  animation: brighten 1.2s infinite;
+  animation-delay: .4s;
+}
+@keyframes brighten {
+  100% {
+    background-color: rgb(165, 165, 165);
+    box-shadow: none;
+  }
+}
+/* finish style to page login*/
+/* start page surall*/
+.sare1{
+  font-size: 28px;
+  font-family: "Noto Naskh Arabic", serif;
+  text-align: center;
+}
+.sakCours{
+  text-align: center;
+  margin-top: 10px;
+}
+.coursSurvice{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-top: 35px;
+  border-bottom: 1px solid #ccc;
+}
+.coursSurvice img{
+  width: 60%;
+}
+.coursSurvice  div{
+  margin: 20px;
+}
+.coursSurvice  div:hover{
+  transition: 1s;
+  transform: scale(1.1);
+  border-bottom: 1px solid #CCc;
+  box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.5);
+}
+/* finish page surall*/
+.footer{
+  background: #000;
+  color: #dddddd;
+  display: flex;
+  justify-content: space-between;
+}
+.contactMe {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.contactMe p{
+  margin-top: 10px;
+}
+.contactMe h4{
+text-align: center;
+}
+.howallregister{
+margin-right: 50px;
+margin-top: 10px;
+}
+/* start page to loginRegister styling*/
+
+/* finish page to loginRegister styling*/
+
+
+
+/* start App web : محفضة الامتحانات*/
+
+.appWeb{
+  display: block;
+  margin-left: 45px;
+}
+.appWeb label{
+ display: block;
+  padding: 8px;
+}
+.appWeb input{
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #c2c;
+  border-radius: 5px;
+}
+.appWeb input:focus{
+  transform: scale(1.1);
+  transition: 1.2s;
+  border: transparent;
+}
+#submit{
+  margin-top: 25px;
+  margin-left: 25%;
+  width: 45%;
+  padding: 7px;
+  border: 1px solid #222;
+  border-radius: 12px;
+}
+#submit:hover{
+  transform: scale(1.1);
+  transition: 1.2s;
+  background: transparent;
+  border: 1px solid #c2c;
+  color: #222;
+}
+
+.classementElement {
+  margin-top: 25px;
+  width: 100%;
+}
+table {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+tbody table{
+  width: 100%;
+}
+.delet{
+  border:0;
+  background-color: transparent;
+  padding: 5px;
+  color: #222;
+  font-weight: bold;
+}
+  
+
+/* finish App web : محفضة الامتحانات*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive dizine*/
+/*tablet responsive*/
+@media screen and (max-width:700px){
+    
+    a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      
+      a:hover {
+        color: #007bff;
+        text-decoration: none;
+      }
+      
+      a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: #007bff;
+        transition: width 0.3s ease;
+        margin-top: 5px;
+      }
+      
+      a:hover::after {
+        width: 100%;
+      }
+      /*page home*/
+      .container{
+        display: block;
+    }
+    .textpage{
+      text-align: center;
+    }
+    .button{
+    margin-left: auto;
+    }
+    /*page register*/
+    .howToLogin{
+      display: block;
+    }
+    .coursSurvice{
+      display:flex;
+    }
+    .l3onwan{
+      margin-left: 35%;
+      margin-top: 10px;
+    }
+    .loginAllPage{
+      display: block;
+    }
+    .inputLogin{
+      margin-left:25%;
+    }    
+}

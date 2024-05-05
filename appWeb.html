@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>محفضة الامتحانات</title>
+    <link rel="icon" href="img/iconz.svg">
+</head>
+<body>
+    <div class="webApp_container">
+        <h1>محفضة الامتحانات</h1>
+      <div class="appWeb">
+        <label >المادة:</label>
+        <input type="text" id="titleApp">
+        <label> موعد الامتحان :</label>
+        <input type="date" id="dateApp">
+        <label > ساعة الامتحان :</label>
+        <input type="time" id="timeApp">
+        <button id="submit" onclick="submitAll()">حفض</button>
+      </div>
+       <div class="classementElement">
+          <table>
+            <tr>
+              <th>المادة</th>
+              <th>موعد الامتحان</th>
+              <th>وقت الامتحان</th>
+            </tr>
+          </table>
+         <tbody id="tbody">
+              <table>
+              <tr>
+                <th>الرياضيات</th> 
+                <th> 12-12-2024</th>
+                <th> 12:30</th>
+                <th><button class="delet">حدف</button></th>
+              </tr>
+               </table>
+         </tbody>
+
+       </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
